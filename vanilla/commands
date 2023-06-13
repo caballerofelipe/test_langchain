@@ -1,0 +1,9 @@
+# Create the environment "test_langchain"
+# python-dotenv: To use .env files for environment variables
+# ipykernel: To run jupyter (and jupyter in VSCode)
+conda create --name test_langchain python=3.9 langchain python-dotenv ipykernel
+
+conda activate test_langchain # Activate the kernel
+
+conda install -n test_langchain openai
+pip install ai21 # Doesn't install on conda, activate environment first
